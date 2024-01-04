@@ -30,6 +30,56 @@
   text-decoration: none;
 }
 
+#so-products {
+  margin: 10rem 0 2.5rem;
+}
+
+.card {
+  transition: var(--so-transition);
+}
+
+.card img {
+  border-bottom: 1px solid transparent;
+}
+
+.card:hover {
+  border-color: var(--so-green) !important;
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+.card:hover img {
+  border-color: var(--so-green);
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+.so-products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  gap: 3rem;
+
+  padding-bottom: 5rem;
+}
+
+.so-products-card {
+  width: 18rem;
+}
+
+.so-products-card-body {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-flow: column wrap;
+  gap: 1rem;
+}
+
+.so-products-card-title {
+  font-weight: 500;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
 .so-testimonies {
   display: flex;
   align-items: center;
@@ -38,17 +88,17 @@
   flex-flow: row wrap;
 }
 
-#so-testimonies {
+.so-section {
   margin: 5rem 0 2.5rem;
   text-align: center;
 }
 
-.card {
+.so-testimony-card {
   height: 368px !important;
   width: 18rem;
 }
 
-.card-body {
+.so-testimony-card-body {
   padding: 1rem 2rem !important;
   text-align: center;
   position: relative;
@@ -99,6 +149,7 @@
 .propaganda-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  margin: 10rem 0;
 
   max-height: 600px;
 }
@@ -152,22 +203,16 @@
 }
 
 @media (max-width: 768px) {
-  .carousel-caption {
-    position: none;
-    top: 20%;
-  }
-  .carousel-caption a {
-    font-size: 0.75rem;
-    padding: 0.3rem 0.5rem;
-  }
-  .carousel-caption h3 {
-    font-size: 1rem;
+  #so-products,
+  #so-testimonies {
+    margin: 4rem 0 2rem;
   }
   .propaganda-container {
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    flex-flow: row wrap-reverse;
   }
   .propaganda-card {
-    padding: 1rem;
+    padding: 1rem 1rem 2rem;
   }
   .propaganda-card h3 {
     font-size: 1.5rem;
@@ -176,11 +221,8 @@
     font-size: 1rem;
   }
   .propaganda-card a {
-    font-size: 0.75rem;
+    font-size: 1rem;
     padding: 0.3rem 0.5rem;
-  }
-  .propaganda-container img {
-    display: none;
   }
 }
 
