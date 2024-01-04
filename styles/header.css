@@ -1,21 +1,21 @@
-@import url(global.css);
+@import "./global.css";
 
 .so-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  margin: 0 auto;
+  margin: 0 auto 4rem;
+  background-color: var(--so-green);
 
-  color: var(--so-green);
+  color: white;
 
-  max-width: 1280px;
   width: 100%;
 }
 
 .so-header a {
   text-decoration: none;
-  color: var(--so-green);
+  color: white;
 }
 
 .so-navigation {
@@ -24,6 +24,8 @@
   justify-content: space-between;
   width: 100%;
   height: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .so-menu {
@@ -54,7 +56,7 @@
 }
 
 .so-nav-link:hover {
-  background-color: var(--so-green);
+  background-color: white;
   color: var(--text);
 }
 
@@ -63,20 +65,23 @@
 }
 
 .navbar-toggler {
-  border: 2px solid var(--so-green) !important;
-  transition: var(--transition);
+  border: 2px solid white !important;
+  transition: var(--transition) !important;
   font-size: 1rem !important;
 }
 
 .navbar-toggler:hover {
-  background-color: var(--so-green) !important;
   border-color: black !important;
+}
+
+.navbar-toggler:hover .ph-list {
+  color: white;
 }
 
 /* Hamburger */
 
 .nav-link {
-  color: var(--so-green) !important;
+  color: var(--text) !important;
   font-weight: 600 !important;
 }
 
@@ -88,7 +93,7 @@
 
 .nav-link:hover {
   background-color: var(--so-green) !important;
-  color: var(--text) !important;
+  color: white !important;
 }
 
 @media (max-width: 900px) {

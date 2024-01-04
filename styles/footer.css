@@ -1,0 +1,93 @@
+@import "./global.css";
+
+footer {
+  background-color: var(--so-green);
+  margin-top: 10rem;
+}
+
+.links-footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: fit-content;
+  list-style: none;
+  gap: 4rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.links-footer div h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.links-footer ul li {
+  margin-bottom: 1rem;
+  list-style: none;
+}
+
+.links-footer ul a {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.links-footer ul a:hover {
+  color: #fff;
+}
+
+.direitos {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  position: relative;
+}
+
+.direitos p {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.redes-sociais {
+  display: flex;
+  align-items: center;
+}
+
+.redes-sociais i {
+  font-size: 2rem;
+  margin-left: 1rem;
+  color: #fff;
+}
+
+.direitos::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  max-width: 95%;
+  background-color: #929fa8;
+  top: 0;
+}
+
+@media (max-width: 768px) {
+  .links-footer {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+  }
+
+  .direitos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .direitos p {
+    text-align: center;
+  }
+
+  .redes-sociais {
+    margin-top: 1rem;
+  }
+}
