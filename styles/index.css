@@ -8,7 +8,7 @@
 
 .carousel-caption {
   position: absolute;
-  top: 40%;
+  bottom: 2rem !important;
 }
 
 .carousel-caption a {
@@ -16,8 +16,11 @@
   font-size: 1.2rem;
   font-weight: 400;
   text-decoration: none;
+
   background-color: var(--so-green);
   padding: 0.5rem;
+  padding: 0.5rem 1rem;
+
   border-radius: 0.5rem;
 }
 
@@ -61,7 +64,7 @@
   left: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
+  color: var(--so-white);
   padding: 5px;
   text-align: center;
 }
@@ -93,39 +96,59 @@
   right: 10px;
 }
 
-.depoimentos h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin: 3rem 0;
-}
-
-.depoimentos-container {
+.propaganda-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin: 0 auto;
-  max-width: 1200px;
-  padding: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+
+  max-height: 600px;
 }
 
-.depoimento-card {
-  border: 1px solid black;
+.propaganda-card {
+  background-color: var(--so-green);
   padding: 2rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.depoimento-card p {
+.propaganda-card h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--so-white);
+}
+
+.propaganda-card a {
+  background-color: transparent;
+  color: var(--so-white);
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 32px;
+  width: fit-content;
+  align-self: flex-start;
+  transition: var(--so-transition);
+  border: 2px solid var(--so-white);
+}
+
+.propaganda-card a:hover {
+  color: black;
+  background-color: var(--so-white);
+  text-decoration: none;
+}
+
+.propaganda-card p {
   font-size: 1.2rem;
   font-weight: 400;
+  color: var(--so-white);
   margin-bottom: 1rem;
 }
 
-.depoimento-card h3 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  text-align: center;
+.propaganda-container img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
 }
 
 @media (max-width: 768px) {
@@ -134,23 +157,30 @@
     top: 20%;
   }
   .carousel-caption a {
-    font-size: 1rem;
+    font-size: 0.75rem;
     padding: 0.3rem 0.5rem;
   }
   .carousel-caption h3 {
-    font-size: 1.25rem;
-  }
-  .depoimentos-container {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .depoimento-card {
-    text-align: center;
-  }
-  .depoimento-card p {
     font-size: 1rem;
   }
-  .depoimento-card h3 {
-    font-size: 1.2rem;
+  .propaganda-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .propaganda-card {
+    padding: 1rem;
+  }
+  .propaganda-card h3 {
+    font-size: 1.5rem;
+  }
+  .propaganda-card p {
+    font-size: 1rem;
+  }
+  .propaganda-card a {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.5rem;
+  }
+  .propaganda-container img {
+    display: none;
   }
 }
 

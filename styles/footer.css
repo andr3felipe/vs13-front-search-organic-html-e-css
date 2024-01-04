@@ -71,6 +71,11 @@ footer {
   font-size: 2rem;
   margin-left: 1rem;
   color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.redes-sociais i:hover {
+  font-size: 2.5rem;
 }
 
 .direitos::before {
@@ -86,7 +91,12 @@ footer {
 @media (max-width: 768px) {
   .links-footer {
     grid-template-columns: repeat(1, 1fr);
-    gap: 0;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .links-footer li a {
+    font-size: 1rem;
   }
 
   .direitos {
