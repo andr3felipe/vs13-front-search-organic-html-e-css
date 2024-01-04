@@ -1,33 +1,33 @@
-@import "./global.css";
+@import "./global.scss", "./header.scss", "./footer.scss";
 
-.carousel-item img {
-  max-height: 600px;
-  min-width: auto;
-  object-fit: cover;
+.carousel-item {
+  img {
+    max-height: 600px;
+    min-width: auto;
+    object-fit: cover;
+  }
 }
 
 .carousel-caption {
   position: absolute;
   bottom: 2rem !important;
-}
 
-.carousel-caption a {
-  color: var(--so-white);
-  font-size: 1.2rem;
-  font-weight: 400;
-  text-decoration: none;
+  a {
+    color: $so-white;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-decoration: none;
+    background-color: $so-green;
+    padding: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
 
-  background-color: var(--so-green);
-  padding: 0.5rem;
-  padding: 0.5rem 1rem;
-
-  border-radius: 0.5rem;
-}
-
-.carousel-caption a:hover {
-  background-color: var(--so-white);
-  color: var(--so-green);
-  text-decoration: none;
+    &:hover {
+      background-color: $so-white;
+      color: $so-green;
+      text-decoration: none;
+    }
+  }
 }
 
 #so-categories {
@@ -35,21 +35,21 @@
 }
 
 .card {
-  transition: var(--so-transition);
-}
+  transition: $so-transition;
 
-.card img {
-  border-bottom: 1px solid transparent;
-}
+  img {
+    border-bottom: 1px solid transparent;
+  }
 
-.card:hover {
-  border-color: var(--so-green) !important;
-  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
-}
+  &:hover {
+    border-color: $so-green !important;
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
 
-.card:hover img {
-  border-color: var(--so-green);
-  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+    img {
+      border-color: $so-green;
+      box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+    }
+  }
 }
 
 .so-categories {
@@ -58,7 +58,6 @@
   justify-content: center;
   flex-flow: row wrap;
   gap: 3rem;
-
   padding-bottom: 5rem;
 }
 
@@ -106,17 +105,17 @@
 
 .so-image-container {
   position: relative;
-}
 
-.so-image-container figcaption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: var(--so-white);
-  padding: 5px;
-  text-align: center;
+  figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: $so-white;
+    padding: 5px;
+    text-align: center;
+  }
 }
 
 .card-text {
@@ -124,7 +123,6 @@
   align-items: center;
   justify-content: center;
   margin: 0 !important;
-
   height: 100%;
 }
 
@@ -150,56 +148,61 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: 10rem 0;
-
   max-height: 600px;
+  display: flex;
+
+  img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+  }
 }
 
 .propaganda-card {
-  background-color: var(--so-green);
+  background-color: $so-green;
   padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
+  padding: 1rem 1rem 2rem;
 
-.propaganda-card h3 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  color: var(--so-white);
-}
+  h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: $so-white;
+    font-size: 1.5rem;
+  }
 
-.propaganda-card a {
-  background-color: transparent;
-  color: var(--so-white);
-  font-size: 1.2rem;
-  font-weight: 600;
-  text-decoration: none;
-  padding: 8px 16px;
-  border-radius: 32px;
-  width: fit-content;
-  align-self: flex-start;
-  transition: var(--so-transition);
-  border: 2px solid var(--so-white);
-}
+  a {
+    background-color: transparent;
+    color: $so-white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 32px;
+    width: fit-content;
+    align-self: flex-start;
+    transition: $so-transition;
+    border: 2px solid $so-white;
+    font-size: 1rem;
+    padding: 0.3rem 0.5rem;
 
-.propaganda-card a:hover {
-  color: black;
-  background-color: var(--so-white);
-  text-decoration: none;
-}
+    &:hover {
+      color: black;
+      background-color: $so-white;
+      text-decoration: none;
+    }
+  }
 
-.propaganda-card p {
-  font-size: 1.2rem;
-  font-weight: 400;
-  color: var(--so-white);
-  margin-bottom: 1rem;
-}
-
-.propaganda-container img {
-  width: 100%;
-  max-height: 500px;
-  object-fit: cover;
+  p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: $so-white;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -207,19 +210,24 @@
   #so-testimonies {
     margin: 4rem 0 2rem;
   }
+
   .propaganda-container {
     display: flex;
     flex-flow: row wrap-reverse;
   }
+
   .propaganda-card {
     padding: 1rem 1rem 2rem;
   }
+
   .propaganda-card h3 {
     font-size: 1.5rem;
   }
+
   .propaganda-card p {
     font-size: 1rem;
   }
+
   .propaganda-card a {
     font-size: 1rem;
     padding: 0.3rem 0.5rem;
@@ -227,6 +235,6 @@
 }
 
 .ph-list {
-  color: var(--so-white);
+  color: $so-white;
   font-size: 1.5rem;
 }

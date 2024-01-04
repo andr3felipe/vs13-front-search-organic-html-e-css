@@ -1,3 +1,5 @@
+@import "./global.scss";
+
 .so-header {
   display: flex;
   justify-content: space-between;
@@ -5,20 +7,25 @@
   padding: 1rem;
   margin: 0 auto 4rem;
   background-color: transparent;
-
-  color: var(--so-green);
-
+  color: $so-green;
   width: 100%;
-}
 
-.so-header a {
-  text-decoration: none;
-  color: var(--so-green);
+  a {
+    text-decoration: none;
+    color: $so-green;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+  }
 }
 
 .so-navigation {
   display: flex;
-
   justify-content: space-between;
   width: 100%;
   height: 100%;
@@ -37,55 +44,51 @@
   font-size: 2rem;
 }
 
-.so-header ul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  list-style: none;
-}
-
 .so-nav-link {
   font-size: 1rem;
   padding: 8px 16px;
   font-weight: 600;
   border-radius: 32px;
-  transition: var(--so-transition);
-}
+  transition: $so-transition;
 
-.so-nav-link:hover {
-  background-color: var(--so-green);
-  color: var(--so-white);
+  &:hover {
+    background-color: $so-green;
+    color: $so-white;
+  }
 }
 
 .navbar {
   display: none !important;
+  display: flex !important;
 }
 
 .navbar-toggler {
-  border: 2px solid var(--so-green) !important;
-  transition: var(--so-transition) !important;
+  border: 2px solid $so-green !important;
+  transition: $so-transition !important;
   font-size: 1rem !important;
-}
 
-.navbar-toggler:hover {
-  border-color: black !important;
+  &:hover {
+    border-color: black !important;
+
+    .ph-list {
+      color: black !important;
+    }
+  }
 }
 
 .ph-list {
-  transition: var(--so-transition);
-  color: var(--so-green) !important;
+  transition: $so-transition;
+  color: $so-green !important;
 }
-
-.navbar-toggler:hover .ph-list {
-  color: black !important;
-}
-
-/* Hamburger */
 
 .nav-link {
-  color: var(--text) !important;
+  color: $so-text !important;
   font-weight: 600 !important;
+
+  &:hover {
+    background-color: $so-green;
+    color: $so-white !important;
+  }
 }
 
 .nav-item,
@@ -96,12 +99,7 @@
 
 .nav-link[aria-current="page"] {
   color: black !important;
-  background-color: var(--so-green);
-}
-
-.nav-link:hover {
-  background-color: var(--so-green);
-  color: var(--so-white) !important;
+  background-color: $so-green;
 }
 
 @media (max-width: 900px) {
