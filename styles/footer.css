@@ -1,5 +1,8 @@
+@import "./global.css";
+
 footer {
-  background-color: #426b1f;
+  background-color: var(--so-green);
+  margin-top: 10rem;
 }
 
 .links-footer {
@@ -12,7 +15,7 @@ footer {
   padding: 2rem;
 }
 
-.links-footer ul h3 {
+.links-footer div h3 {
   color: #fff;
   font-size: 1.5rem;
   font-weight: 700;
@@ -25,9 +28,9 @@ footer {
 }
 
 .links-footer ul a {
-  color: #ccc;
+  color: white;
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 600;
   text-decoration: none;
 }
 
