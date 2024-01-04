@@ -1,0 +1,89 @@
+footer {
+  background-color: #426b1f;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: fit-content;
+  list-style: none;
+  gap: 4rem;
+  margin: 0 auto;
+}
+
+nav ul h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+nav ul li {
+  margin-bottom: 1rem;
+  list-style: none;
+}
+
+nav ul a {
+  color: #ccc;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+nav ul a:hover {
+  color: #fff;
+}
+
+.direitos {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  position: relative;
+}
+
+.direitos p {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.redes-sociais {
+  display: flex;
+  align-items: center;
+}
+
+.redes-sociais img {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 1rem;
+}
+
+.direitos::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  max-width: 95%;
+  background-color: #929fa8;
+  top: 0;
+}
+
+@media (max-width: 768px) {
+  nav {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+  }
+
+  .direitos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .direitos p {
+    text-align: center;
+  }
+
+  .redes-sociais {
+    margin-top: 1rem;
+  }
+}
