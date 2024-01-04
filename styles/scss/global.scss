@@ -2,12 +2,19 @@ $so-green: #426b1f;
 $so-text: black;
 $so-white: #fff;
 $so-transition: all 0.2s ease-in-out;
+$so-bg: #F6FBF1;
+$so-secondary: #B9EA8F;
+$so-accent: #9DEC58;
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Inter", sans-serif;
+}
+
+body{
+  background-color: $so-bg !important;
 }
 
 main {
