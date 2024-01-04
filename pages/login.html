@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Faça login ou crie sua conta" />
+    <meta name="keywords" content="login, cadastro, recupera sua conta" />
+    <meta name="author" content="Squad 1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/css/login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Login</title>
+  </head>
+
+  <body>
+    <header class="so-header">
+      <nav class="so-navigation">
+        <div>
+          <a href="#" class="so-logo">Search Organic</a>
+        </div>
+
+        <div class="so-menu">
+          <ul>
+            <li>
+              <a class="so-nav-link" aria-current="page" href="../index.html"
+                >Início</a
+              >
+            </li>
+            <li><a class="so-nav-link" href="#">Loja</a></li>
+            <li><a class="so-nav-link" href="#">Novidades</a></li>
+            <li><a class="so-nav-link" href="#">Sobre nós</a></li>
+          </ul>
+
+          <div>
+            <a href="#" class="so-nav-link">Login</a>
+          </div>
+        </div>
+        <div class="navbar">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Abrir menu lateral"
+            >
+              <i class="ph ph-list"></i>
+            </button>
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                <button
+                  type="button"
+                  class="btn-close btn"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav flex-grow-1">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Início</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Loja</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Novidades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre nós</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="so-title">Login</h1>
+      <form class="so-login-form" action="../pages/perfil.html" method="get">
+        <div class="mb-3">
+          <label for="email" class="form-label">Endereço de e-mail</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            aria-describedby="email-tip"
+          />
+          <div id="email-tip" class="form-text">
+            Nunca compartilhe seus dados de login.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Senha</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            minlength="6"
+          />
+          <a href="#" class="so-forgot-password">Esqueceu a senha?</a>
+        </div>
+
+        <button type="submit" class="btn btn-outline-success">Entrar</button>
+      </form>
+
+      <hr />
+
+      <h2>Quero acessar com minhas redes sociais</h2>
+      <div class="so-login-with-social-media">
+        <a href="#" class="btn btn-outline-primary">
+          <i class="ph ph-facebook-logo" aria-label="Login com o Facebook"></i>
+          Facebook
+        </a>
+        <a
+          href="#"
+          class="btn btn-outline-danger"
+          aria-label="Login com o Google"
+        >
+          <i class="ph ph-google-logo"></i> Google
+        </a>
+      </div>
+      <div class="so-register">
+        <h3>Novo no Search Organic?</h3>
+        <a href="../pages/cadastro.html">CADASTRE-SE</a>
+      </div>
+    </main>
+
+    <footer>
+      <nav class="links-footer">
+        <div>
+          <h3>Produtos</h3>
+          <ul>
+            <li><a href="#">Verduras</a></li>
+            <li><a href="#">Legumes</a></li>
+            <li><a href="#">Frutas</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Empresa</h3>
+          <ul>
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Trabalhe conosco</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Atendimento</h3>
+          <ul>
+            <li><a href="#">Perguntas frequentes</a></li>
+            <li><a href="#">Política de privacidade</a></li>
+            <li><a href="#">Política de troca e devolução</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="direitos">
+        <p>Search Organic &copy; 2024</p>
+        <div class="redes-sociais">
+          <a href="#" aria-label="Acesse nosso Facebook"
+            ><i class="ph ph-facebook-logo"></i
+          ></a>
+          <a href="#" aria-label="Acesse nosso Instagram"
+            ><i class="ph ph-instagram-logo"></i
+          ></a>
+          <a href="#" aria-label="Acesse nosso Twitter"
+            ><i class="ph ph-twitter-logo"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

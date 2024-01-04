@@ -38,10 +38,12 @@ ul {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  margin: 0 auto 4rem;
+  margin: 0 auto 8rem;
   background-color: transparent;
   color: #426b1f;
   width: 100%;
+  position: sticky;
+  top: 0;
 }
 .so-header a {
   text-decoration: none;
