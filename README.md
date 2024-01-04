@@ -63,36 +63,36 @@ exemplo.
 
 # Header
 
-Menu de navegação entre as futuras páginas, botão de login e Nome da empresa
+O menu de navegação entre as futuras páginas, o botão de login e o nome da empresa estão contidos nesta seção.
 
 <img src="./assets/readme-imgs/header.png" />
 
 # Carousel
 
-Carousel com imagens que estão relacionadas ao proposito da nossa aplicação, texto chamativo e botão para o usuário saber mais.
+Esta seção apresenta um carrossel com imagens relacionadas ao propósito da nossa aplicação, um texto chamativo e um botão para que os usuários possam obter mais informações.
 
 # Categorias
 
-Conjunto de Cards em que o usuário poderá buscar o alimento que ele quer por categorias
+Nesta parte, oferecemos um conjunto de cards que permite aos usuários buscar alimentos por categorias, facilitando a navegação e a localização dos produtos desejados.
 
 # Recomendações
 
-Lista de cards com recomendações dos principais produtos ou lojas do momento no nosso sistema
+Apresentamos uma lista de cards com recomendações dos principais produtos ou lojas do momento em nosso sistema, proporcionando aos usuários insights valiosos sobre as escolhas populares.
 
 # Propaganda
 
-Secão com um grid divido com uma imagem que também se relaciona com o nosso produto e um texto mostrando o nosso diferencial para pontencial clientes
+Nesta seção, um grid foi dividido com uma imagem relacionada ao nosso produto e um texto destacando o nosso diferencial para potenciais clientes.
 
 <img src="./assets/readme-imgs/propaganda.png" />
 
 # Depoimentos
 
-Seção com cards com o intuito de passar ao cliente maior credibilidade do nosso produto com avalições positivas de usuarios anteriores.
+Criamos uma seção com cards com o intuito de transmitir aos clientes uma maior credibilidade sobre o nosso produto, apresentando avaliações positivas de usuários anteriores.
 
 <img src="./assets/readme-imgs/depoimentos-cards.png"/>
 
 # Footer
 
-Footer com links para outras paginas e nossas redes sociais.
+Por fim, implementamos um rodapé com links para outras páginas e nossas redes sociais, oferecendo uma navegação completa e facilitando o contato com a comunidade.
 
 <img src="./assets/readme-imgs/footer.png" />
