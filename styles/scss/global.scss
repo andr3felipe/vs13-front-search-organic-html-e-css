@@ -12,6 +12,16 @@ $so-gray-700: rgba(132, 114, 98, 1);
 $so-gray-800: rgba(100, 86, 79, 1);
 $so-gray-900: rgba(73, 58, 49, 1);
 
+.btn-outline-success {
+  color: $so-green !important;
+  border-color: $so-green !important;
+
+  &:hover {
+    color: $so-white !important;
+    background-color: $so-green !important;
+  }
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
