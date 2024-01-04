@@ -1,5 +1,32 @@
 @import "./footer.css";
 
+.carousel-item img {
+  max-height: 400px;
+  min-width: auto;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 40%;
+}
+
+.carousel-caption a {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-decoration: none;
+  background-color: #426b1f;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.carousel-caption a:hover {
+  background-color: #fff;
+  color: #426b1f;
+  text-decoration: none;
+}
+
 .depoimentos h2 {
   font-size: 2rem;
   font-weight: 700;
@@ -36,6 +63,17 @@
 }
 
 @media (max-width: 768px) {
+  .carousel-caption {
+    position: none;
+    top: 20%;
+  }
+  .carousel-caption a {
+    font-size: 1rem;
+    padding: 0.3rem 0.5rem;
+  }
+  .carousel-caption h3 {
+    font-size: 1.25rem;
+  }
   .depoimentos-container {
     grid-template-columns: repeat(1, 1fr);
   }
