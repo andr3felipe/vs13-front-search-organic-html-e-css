@@ -30,7 +30,7 @@
   text-decoration: none;
 }
 
-#so-products {
+#so-categories {
   margin: 10rem 0 2.5rem;
 }
 
@@ -52,7 +52,7 @@
   box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
 }
 
-.so-products {
+.so-categories {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -203,7 +203,7 @@
 }
 
 @media (max-width: 768px) {
-  #so-products,
+  #so-categories,
   #so-testimonies {
     margin: 4rem 0 2rem;
   }
