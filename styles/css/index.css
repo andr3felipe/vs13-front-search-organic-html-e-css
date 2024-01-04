@@ -339,7 +339,7 @@ footer {
 .carousel-caption {
   position: absolute;
   bottom: 2rem !important;
-  top: 50%;
+  top: 43%;
 }
 .carousel-caption a {
   color: #fff;
@@ -398,6 +398,10 @@ footer {
 
 .so-products-card {
   width: 18rem;
+}
+.so-products-card img {
+  height: 200px;
+  object-fit: cover;
 }
 
 .so-products-card-body {
@@ -555,6 +559,9 @@ footer {
     display: flex;
     flex-flow: row wrap-reverse;
   }
+  .propaganda-container img {
+    max-height: 150px;
+  }
   .propaganda-card {
     padding: 1rem 1rem 2rem;
   }
@@ -567,6 +574,9 @@ footer {
   .propaganda-card a {
     font-size: 1rem;
     padding: 0.3rem 0.5rem;
+  }
+  .so-products-card {
+    max-width: 200px;
   }
 }
 .ph-list {

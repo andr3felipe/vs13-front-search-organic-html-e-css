@@ -11,7 +11,7 @@
 .carousel-caption {
   position: absolute;
   bottom: 2rem !important;
-  top: 50%;
+  top: 43%;
 
   a {
     color: $so-white;
@@ -75,6 +75,10 @@
 
 .so-products-card {
   width: 18rem;
+  img{
+    height: 200px;
+    object-fit: cover;
+  }
 }
 
 .so-products-card-body {
@@ -240,6 +244,10 @@
   .propaganda-container {
     display: flex;
     flex-flow: row wrap-reverse;
+    img{
+      max-height: 150px;
+     
+    }
   }
 
   .propaganda-card {
@@ -255,6 +263,11 @@
       padding: 0.3rem 0.5rem;
     }
 
+  }
+
+
+  .so-products-card {
+    max-width: 200px;
   }
 
 }
