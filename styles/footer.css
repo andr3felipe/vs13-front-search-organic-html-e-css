@@ -2,35 +2,36 @@ footer {
   background-color: #426b1f;
 }
 
-nav {
+.links-footer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   max-width: fit-content;
   list-style: none;
   gap: 4rem;
   margin: 0 auto;
+  padding: 2rem;
 }
 
-nav ul h3 {
+.links-footer ul h3 {
   color: #fff;
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
 
-nav ul li {
+.links-footer ul li {
   margin-bottom: 1rem;
   list-style: none;
 }
 
-nav ul a {
+.links-footer ul a {
   color: #ccc;
   font-size: 1.2rem;
   font-weight: 400;
   text-decoration: none;
 }
 
-nav ul a:hover {
+.links-footer ul a:hover {
   color: #fff;
 }
 
@@ -69,7 +70,7 @@ nav ul a:hover {
 }
 
 @media (max-width: 768px) {
-  nav {
+  .links-footer {
     grid-template-columns: repeat(1, 1fr);
     gap: 0;
   }
