@@ -3,8 +3,9 @@
 
 :root {
   --so-green: #426b1f;
-  --text: black;
-  --transition: all 0.2s ease-in-out;
+  --so-text: black;
+  --so-white: #fff;
+  --so-transition: all 0.2s ease-in-out;
 }
 
 * {

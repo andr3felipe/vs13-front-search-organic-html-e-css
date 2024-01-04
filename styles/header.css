@@ -4,16 +4,16 @@
   align-items: center;
   padding: 1rem;
   margin: 0 auto 4rem;
-  background-color: var(--so-green);
+  background-color: transparent;
 
-  color: white;
+  color: var(--so-green);
 
   width: 100%;
 }
 
 .so-header a {
   text-decoration: none;
-  color: white;
+  color: var(--so-green);
 }
 
 .so-navigation {
@@ -50,12 +50,12 @@
   padding: 8px 16px;
   font-weight: 600;
   border-radius: 32px;
-  transition: var(--transition);
+  transition: var(--so-transition);
 }
 
 .so-nav-link:hover {
-  background-color: white;
-  color: var(--text);
+  background-color: var(--so-green);
+  color: var(--so-white);
 }
 
 .navbar {
@@ -63,8 +63,8 @@
 }
 
 .navbar-toggler {
-  border: 2px solid white !important;
-  transition: var(--transition) !important;
+  border: 2px solid var(--so-green) !important;
+  transition: var(--so-transition) !important;
   font-size: 1rem !important;
 }
 
@@ -73,11 +73,12 @@
 }
 
 .ph-list {
-  transition: var(--transition);
+  transition: var(--so-transition);
+  color: var(--so-green) !important;
 }
 
 .navbar-toggler:hover .ph-list {
-  color: black;
+  color: black !important;
 }
 
 /* Hamburger */
@@ -100,7 +101,7 @@
 
 .nav-link:hover {
   background-color: var(--so-green);
-  color: white !important;
+  color: var(--so-white) !important;
 }
 
 @media (max-width: 900px) {
