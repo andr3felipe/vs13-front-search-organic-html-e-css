@@ -7,15 +7,15 @@
   align-items: center;
   position: sticky;
   top: 0;
-  background-color: $so-secondary;
+  background-color: $so-green;
   padding: 1rem;
-  margin: 0 auto 8rem;
-  color: $so-green;
+  margin: 0 auto;
+  color: $so-gray-100;
   width: 100%;
 
   a {
     text-decoration: none;
-    color: $so-green;
+    color: $so-gray-100;
   }
 
   ul {
@@ -57,7 +57,7 @@
 
   &:hover {
     background-color: $so-green;
-    color: $so-white;
+    color: $so-gray-200;
   }
 }
 
