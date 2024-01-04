@@ -75,7 +75,7 @@ Esta seção apresenta um carrossel com imagens relacionadas ao propósito da no
 
 Nesta parte, oferecemos um conjunto de cards que permite aos usuários buscar alimentos por categorias, facilitando a navegação e a localização dos produtos desejados.
 
-<img src="./assets/readme-imgs/products-container.png">
+<img src="./assets/readme-imgs/nossos-produtos.jpg">
 
 # Recomendações
 
