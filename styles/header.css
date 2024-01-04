@@ -1,5 +1,3 @@
-@import "./global.css";
-
 .so-header {
   display: flex;
   justify-content: space-between;
@@ -74,8 +72,12 @@
   border-color: black !important;
 }
 
+.ph-list {
+  transition: var(--transition);
+}
+
 .navbar-toggler:hover .ph-list {
-  color: white;
+  color: black;
 }
 
 /* Hamburger */
@@ -87,12 +89,17 @@
 
 .nav-item,
 .nav-link {
-  width: 100% !important;
-  text-align: center !important;
+  width: 100%;
+  text-align: center;
+}
+
+.nav-link[aria-current="page"] {
+  color: black !important;
+  background-color: var(--so-green);
 }
 
 .nav-link:hover {
-  background-color: var(--so-green) !important;
+  background-color: var(--so-green);
   color: white !important;
 }
 
