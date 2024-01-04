@@ -1,0 +1,21 @@
+@import url(header.css);
+
+:root {
+  --so-green: #426b1f;
+  --text: black;
+  --transition: all 0.2s ease-in-out;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ul {
+  margin-bottom: 0 !important;
+}
