@@ -1,1 +1,51 @@
 @import "./footer.css";
+
+.depoimentos h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.depoimentos-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 2rem;
+}
+
+.depoimento-card {
+  border: 1px solid black;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.depoimento-card p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.depoimento-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .depoimentos-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .depoimento-card {
+    text-align: center;
+  }
+  .depoimento-card p {
+    font-size: 1rem;
+  }
+  .depoimento-card h3 {
+    font-size: 1.2rem;
+  }
+}
