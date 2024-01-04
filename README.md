@@ -69,11 +69,13 @@ O menu de navegação entre as futuras páginas, o botão de login e o nome da e
 
 # Carousel
 
-Esta seção apresenta um carrossel com imagens relacionadas ao propósito da nossa aplicação, um texto chamativo e um botão para que os usuários possam obter mais informações.
+Esta seção apresenta um carrossel com imagens relacionadas ao propósito da nossa aplicação,
 
 # Categorias
 
 Nesta parte, oferecemos um conjunto de cards que permite aos usuários buscar alimentos por categorias, facilitando a navegação e a localização dos produtos desejados.
+
+<img src="./assets/readme-imgs/products-container.png">
 
 # Recomendações
 
