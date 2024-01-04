@@ -53,10 +53,10 @@ footer {
   align-items: center;
 }
 
-.redes-sociais img {
-  width: 2rem;
-  height: 2rem;
+.redes-sociais i {
+  font-size: 2rem;
   margin-left: 1rem;
+  color: #fff;
 }
 
 .direitos::before {
