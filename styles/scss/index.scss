@@ -29,12 +29,12 @@
       text-decoration: none;
     }
   }
-  h3{
+  h3 {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 1rem;
     color: $so-white;
-    text-shadow: 1px 1px 1px black; 
+    text-shadow: 1px 1px 1px black;
   }
 }
 
@@ -69,13 +69,13 @@
   padding-bottom: 5rem;
 }
 
-.so-button{
+.so-button {
   align-self: center;
 }
 
 .so-products-card {
   width: 18rem;
-  img{
+  img {
     height: 200px;
     object-fit: cover;
   }
@@ -187,7 +187,6 @@
     font-weight: 700;
     margin-bottom: 1rem;
     color: $so-white;
-
   }
 
   a {
@@ -215,12 +214,11 @@
     font-weight: 400;
     color: $so-white;
     margin-bottom: 1rem;
-
   }
 }
 
-.so-section-title{
-  font-family: 'Newsreader', serif;
+.so-section-title {
+  font-family: "Newsreader", serif;
   font-size: 2.5rem;
   font-weight: 400;
 }
@@ -228,10 +226,10 @@
 @media (max-width: 768px) {
   .carousel-caption {
     top: 15%;
-    h3{
+    h3 {
       font-size: 1rem;
     }
-    a{
+    a {
       font-size: 0.8rem;
       padding: 0.3rem 0.5rem;
     }
@@ -244,32 +242,28 @@
   .propaganda-container {
     display: flex;
     flex-flow: row wrap-reverse;
-    img{
+    img {
       max-height: 150px;
-     
     }
   }
 
   .propaganda-card {
     padding: 1rem 1rem 2rem;
-    h3{
+    h3 {
       font-size: 1.5rem;
     }
-    p{
+    p {
       font-size: 1rem;
     }
-    a{
+    a {
       font-size: 1rem;
       padding: 0.3rem 0.5rem;
     }
-
   }
-
 
   .so-products-card {
     max-width: 200px;
   }
-
 }
 
 .ph-list {

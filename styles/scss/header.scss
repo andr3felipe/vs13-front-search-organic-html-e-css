@@ -9,7 +9,8 @@
   top: 0;
   background-color: $so-secondary;
   padding: 1rem;
-  margin: 0 auto 2rem;
+  margin: 0 auto 8rem;
+  color: $so-green;
   width: 100%;
 
   a {
@@ -44,8 +45,7 @@
 
 .so-logo {
   font-size: 2rem;
-  font-family: 'Newsreader', serif;
-
+  font-family: "Newsreader", serif;
 }
 
 .so-nav-link {
@@ -107,7 +107,7 @@
 }
 
 @media (max-width: 900px) {
-  .so-header{
+  .so-header {
     padding: 1rem 0;
   }
 

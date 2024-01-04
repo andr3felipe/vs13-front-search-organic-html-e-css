@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #F6FBF1 !important;
+  background-color: #f6fbf1 !important;
 }
 
 main {
@@ -44,9 +44,10 @@ ul {
   align-items: center;
   position: sticky;
   top: 0;
-  background-color: #B9EA8F;
+  background-color: #b9ea8f;
   padding: 1rem;
-  margin: 0 auto 2rem;
+  margin: 0 auto 8rem;
+  color: #426b1f;
   width: 100%;
 }
 .so-header a {

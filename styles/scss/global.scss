@@ -2,9 +2,9 @@ $so-green: #426b1f;
 $so-text: black;
 $so-white: #fff;
 $so-transition: all 0.2s ease-in-out;
-$so-bg: #F6FBF1;
-$so-secondary: #B9EA8F;
-$so-accent: #9DEC58;
+$so-bg: #f6fbf1;
+$so-secondary: #b9ea8f;
+$so-accent: #9dec58;
 
 * {
   box-sizing: border-box;
@@ -13,7 +13,7 @@ $so-accent: #9DEC58;
   font-family: "Inter", sans-serif;
 }
 
-body{
+body {
   background-color: $so-bg !important;
 }
 
