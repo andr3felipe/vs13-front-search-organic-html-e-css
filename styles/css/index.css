@@ -5,6 +5,10 @@
   font-family: "Inter", sans-serif;
 }
 
+body {
+  background-color: #f6fbf1 !important;
+}
+
 main {
   max-width: 1280px;
   margin: 0 auto;
@@ -40,6 +44,10 @@ ul {
   font-family: "Inter", sans-serif;
 }
 
+body {
+  background-color: #f6fbf1 !important;
+}
+
 main {
   max-width: 1280px;
   margin: 0 auto;
@@ -69,16 +77,17 @@ ul {
 }
 
 .so-header {
+  z-index: 12;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-  margin: 0 auto 8rem;
-  background-color: transparent;
-  color: #426b1f;
-  width: 100%;
   position: sticky;
   top: 0;
+  background-color: #b9ea8f;
+  padding: 1rem;
+  margin: 0 auto 8rem;
+  color: #426b1f;
+  width: 100%;
 }
 .so-header a {
   text-decoration: none;
@@ -110,6 +119,7 @@ ul {
 
 .so-logo {
   font-size: 2rem;
+  font-family: "Newsreader", serif;
 }
 
 .so-nav-link {
@@ -167,6 +177,9 @@ ul {
 }
 
 @media (max-width: 900px) {
+  .so-header {
+    padding: 1rem 0;
+  }
   .so-menu {
     display: none;
   }
@@ -179,6 +192,10 @@ ul {
   margin: 0;
   padding: 0;
   font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #f6fbf1 !important;
 }
 
 main {
@@ -323,6 +340,7 @@ footer {
 .carousel-caption {
   position: absolute;
   bottom: 2rem !important;
+  top: 43%;
 }
 .carousel-caption a {
   color: #fff;
@@ -339,9 +357,16 @@ footer {
   color: #426b1f;
   text-decoration: none;
 }
+.carousel-caption h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #fff;
+  text-shadow: 1px 1px 1px black;
+}
 
 #so-categories {
-  margin: 10rem 0 2.5rem;
+  margin: 4rem 0 2.5rem;
 }
 
 .card {
@@ -368,8 +393,16 @@ footer {
   padding-bottom: 5rem;
 }
 
+.so-button {
+  align-self: center;
+}
+
 .so-products-card {
   width: 18rem;
+}
+.so-products-card img {
+  height: 200px;
+  object-fit: cover;
 }
 
 .so-products-card-body {
@@ -453,7 +486,7 @@ footer {
 .propaganda-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin: 10rem 0;
+  margin: 2rem 0;
   max-height: 600px;
   display: flex;
 }
@@ -472,11 +505,10 @@ footer {
   padding: 1rem 1rem 2rem;
 }
 .propaganda-card h3 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1rem;
   color: #fff;
-  font-size: 1.5rem;
 }
 .propaganda-card a {
   background-color: transparent;
@@ -484,14 +516,12 @@ footer {
   font-size: 1.2rem;
   font-weight: 600;
   text-decoration: none;
-  padding: 8px 16px;
-  border-radius: 32px;
+  border-radius: 4px;
   width: fit-content;
   align-self: flex-start;
   transition: all 0.2s ease-in-out;
   border: 2px solid #fff;
-  font-size: 1rem;
-  padding: 0.3rem 0.5rem;
+  padding: 0.5rem 0.5rem;
 }
 .propaganda-card a:hover {
   color: black;
@@ -503,10 +533,25 @@ footer {
   font-weight: 400;
   color: #fff;
   margin-bottom: 1rem;
-  font-size: 1rem;
+}
+
+.so-section-title {
+  font-family: "Newsreader", serif;
+  font-size: 2.5rem;
+  font-weight: 400;
 }
 
 @media (max-width: 768px) {
+  .carousel-caption {
+    top: 15%;
+  }
+  .carousel-caption h3 {
+    font-size: 1rem;
+  }
+  .carousel-caption a {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.5rem;
+  }
   #so-categories,
   #so-testimonies {
     margin: 4rem 0 2rem;
@@ -514,6 +559,9 @@ footer {
   .propaganda-container {
     display: flex;
     flex-flow: row wrap-reverse;
+  }
+  .propaganda-container img {
+    max-height: 150px;
   }
   .propaganda-card {
     padding: 1rem 1rem 2rem;
@@ -527,6 +575,9 @@ footer {
   .propaganda-card a {
     font-size: 1rem;
     padding: 0.3rem 0.5rem;
+  }
+  .so-products-card {
+    max-width: 200px;
   }
 }
 .ph-list {

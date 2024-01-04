@@ -5,6 +5,10 @@
   font-family: "Inter", sans-serif;
 }
 
+body {
+  background-color: #f6fbf1 !important;
+}
+
 main {
   max-width: 1280px;
   margin: 0 auto;

@@ -1,17 +1,17 @@
 @import "./global.scss";
 
 .so-header {
+  z-index: 12;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-  margin: 0 auto 8rem;
-  background-color: transparent;
-  color: $so-green;
-  width: 100%;
-
   position: sticky;
   top: 0;
+  background-color: $so-secondary;
+  padding: 1rem;
+  margin: 0 auto 8rem;
+  color: $so-green;
+  width: 100%;
 
   a {
     text-decoration: none;
@@ -45,6 +45,7 @@
 
 .so-logo {
   font-size: 2rem;
+  font-family: "Newsreader", serif;
 }
 
 .so-nav-link {
@@ -106,6 +107,10 @@
 }
 
 @media (max-width: 900px) {
+  .so-header {
+    padding: 1rem 0;
+  }
+
   .so-menu {
     display: none;
   }

@@ -5,6 +5,10 @@
   font-family: "Inter", sans-serif;
 }
 
+body {
+  background-color: #f6fbf1 !important;
+}
+
 main {
   max-width: 1280px;
   margin: 0 auto;
@@ -34,16 +38,17 @@ ul {
 }
 
 .so-header {
+  z-index: 12;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-  margin: 0 auto 8rem;
-  background-color: transparent;
-  color: #426b1f;
-  width: 100%;
   position: sticky;
   top: 0;
+  background-color: #b9ea8f;
+  padding: 1rem;
+  margin: 0 auto 8rem;
+  color: #426b1f;
+  width: 100%;
 }
 .so-header a {
   text-decoration: none;
@@ -75,6 +80,7 @@ ul {
 
 .so-logo {
   font-size: 2rem;
+  font-family: "Newsreader", serif;
 }
 
 .so-nav-link {
@@ -132,6 +138,9 @@ ul {
 }
 
 @media (max-width: 900px) {
+  .so-header {
+    padding: 1rem 0;
+  }
   .so-menu {
     display: none;
   }
