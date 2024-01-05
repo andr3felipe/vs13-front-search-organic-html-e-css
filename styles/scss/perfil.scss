@@ -132,16 +132,67 @@ main {
       font-weight: 700;
     }
     .btn-status {
+      border: none;
       color: white;
       background-color: $so-green;
       border-radius: 0.375rem;
       padding: 0.5rem 0.75rem;
       text-align: center;
+      &:hover {
+        background-color: #224f49;
+      }
+    }
+  }
+}
+
+.modal-body {
+  display: flex;
+  justify-content: space-between !important;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 95%;
+    top: 0;
+    height: 1px;
+    background-color: $so-gray-200;
+  }
+  .modal-details {
+    span {
+      color: $so-text;
     }
   }
 }
 
 @media (max-width: 768px) {
+  .modal-body {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1rem;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 95%;
+      top: 0;
+      height: 1px;
+      background-color: $so-gray-200;
+    }
+    .modal-details {
+      span {
+        color: $so-text;
+      }
+    }
+  }
+
   .my-data {
     padding: 0 10px;
     width: 100%;
