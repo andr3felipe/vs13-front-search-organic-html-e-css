@@ -12172,6 +12172,14 @@ hr {
   gap: 1rem;
   font-weight: 600 !important;
 }
+.so-login-with-social-media .btn-primary {
+  background-color: #3b5998;
+  border-color: #3b5998;
+}
+.so-login-with-social-media .btn-primary:hover {
+  background-color: #1a3061;
+  border-color: #1a3061;
+}
 .so-login-with-social-media a {
   display: flex;
   align-items: center;

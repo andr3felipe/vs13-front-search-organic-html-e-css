@@ -57,6 +57,15 @@ hr {
   gap: 1rem;
   font-weight: 600 !important;
 
+  .btn-primary {
+    background-color: #3b5998;
+    border-color: #3b5998;
+    &:hover {
+      background-color: #1a3061;
+      border-color: #1a3061;
+    }
+  }
+
   a {
     display: flex;
     align-items: center;
