@@ -1,3 +1,12 @@
+.btn-outline-success {
+  color: rgb(40, 93, 86) !important;
+  border-color: rgb(40, 93, 86) !important;
+}
+.btn-outline-success:hover {
+  color: #fff !important;
+  background-color: rgb(40, 93, 86) !important;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -35,6 +44,15 @@ ul {
 .so-button:hover {
   background-color: rgb(40, 93, 86);
   color: #fff;
+}
+
+.btn-outline-success {
+  color: rgb(40, 93, 86) !important;
+  border-color: rgb(40, 93, 86) !important;
+}
+.btn-outline-success:hover {
+  color: #fff !important;
+  background-color: rgb(40, 93, 86) !important;
 }
 
 * {
@@ -187,6 +205,15 @@ ul {
     display: flex !important;
   }
 }
+.btn-outline-success {
+  color: rgb(40, 93, 86) !important;
+  border-color: rgb(40, 93, 86) !important;
+}
+.btn-outline-success:hover {
+  color: #fff !important;
+  background-color: rgb(40, 93, 86) !important;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
