@@ -35970,11 +35970,14 @@ main span {
   max-width: 1200px;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
   gap: 1rem;
 }
 .my-favorites .my-favorites-cards p {
   margin: 0 10px;
+}
+
+.ph {
+  margin-left: 0.5rem;
 }
 
 .so-products-card {
@@ -35982,7 +35985,6 @@ main span {
   transition: all 0.2s ease-in-out;
 }
 .so-products-card img {
-  height: 100px;
   object-fit: cover;
 }
 .so-products-card:hover {

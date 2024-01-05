@@ -23,9 +23,12 @@ Passo-a-passo:
 ```
 git clone repositorio
 cd rep
+npm install
 code .
 Open With Live Server
 ```
+
+> Nosso projeto possui dependencias extenas como o Bootstrap, portanto é necessário o comando de npm install
 
 # Search Organic
 
