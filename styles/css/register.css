@@ -35926,22 +35926,12 @@ footer {
   margin-bottom: 3rem;
 }
 
-.so-login-form {
+.so-register-form {
   margin: 0 auto;
-  max-width: 500px;
+  max-width: 46.875rem;
 }
-.so-login-form label {
+.so-register-form label {
   font-weight: 600 !important;
-}
-.so-login-form .so-forgot-password {
-  display: block;
-  font-size: 0.8rem;
-  text-align: end;
-  margin-top: 0.25rem;
-  color: black;
-}
-.so-login-form .so-forgot-password:hover {
-  color: rgb(40, 93, 86);
 }
 
 .form-control:focus {
@@ -35977,23 +35967,39 @@ hr {
   gap: 0.5rem;
 }
 
-.so-register {
-  margin-top: 1rem;
-  text-align: center;
+.flex-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-flow: row wrap;
+  gap: 1rem;
 }
-.so-register a {
-  color: rgb(40, 93, 86);
-  font-weight: 600;
+.flex-container > div {
+  flex: 1;
+  flex-basis: 10rem;
 }
-.so-register a:hover {
-  text-decoration: underline !important;
+
+.so-checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
 }
-.so-register h3, .so-register .h3 {
-  display: inline-block;
-  font-size: 1rem;
-  font-weight: 600;
-  text-align: center;
+.so-checkbox-container .form-check-input {
+  margin-top: 0px !important;
+}
+
+button[type=submit] {
   margin-top: 1rem;
 }
 
-/*# sourceMappingURL=login.css.map */
+@media screen and (max-width: 600px) {
+  .so-checkbox-container {
+    margin-top: 0.5rem;
+  }
+  .so-checkbox-container .form-check-label-outline {
+    font-size: 0.75rem;
+  }
+}
+
+/*# sourceMappingURL=register.css.map */
