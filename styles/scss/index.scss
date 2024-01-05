@@ -232,7 +232,7 @@
 .so-missao {
   display: flex;
   flex-direction: column;
-  background-color: $so-accent;
+  background-color: #004d40;
   padding: 4rem;
   max-width: 1440px;
   margin: 3rem auto 0;
@@ -240,14 +240,14 @@
   border-radius: 27px;
   span {
     font-size: 1.5rem;
-    font-weight: 400;
-    color: $so-white;
+    font-weight: 500;
+    color: $so-gray-200;
     margin-bottom: 1rem;
   }
   h2 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: $so-secondary;
+    color: #e6e0d2;
     margin-bottom: 2rem;
     text-wrap: nowrap;
   }

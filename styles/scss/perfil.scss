@@ -44,8 +44,7 @@ main {
     max-width: 1200px;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    // background-color: $so-gray-200;
+
     gap: 1rem;
     p {
       margin: 0 10px;
@@ -53,11 +52,15 @@ main {
   }
 }
 
+.ph {
+  margin-left: 0.5rem;
+}
+
 .so-products-card {
   width: 12rem;
   transition: all 0.2s ease-in-out;
   img {
-    height: 100px;
+    // height: 100px;
     object-fit: cover;
   }
   &:hover {

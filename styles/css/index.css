@@ -36145,7 +36145,7 @@ footer {
 .so-missao {
   display: flex;
   flex-direction: column;
-  background-color: #007766;
+  background-color: #004d40;
   padding: 4rem;
   max-width: 1440px;
   margin: 3rem auto 0;
@@ -36153,14 +36153,14 @@ footer {
 }
 .so-missao span {
   font-size: 1.5rem;
-  font-weight: 400;
-  color: #fff;
+  font-weight: 500;
+  color: rgb(235, 229, 223);
   margin-bottom: 1rem;
 }
 .so-missao h2, .so-missao .h2 {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #274c5b;
+  color: #e6e0d2;
   margin-bottom: 2rem;
   text-wrap: nowrap;
 }
