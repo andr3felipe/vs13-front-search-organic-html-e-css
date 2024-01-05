@@ -35927,7 +35927,9 @@ footer {
   }
 }
 main {
-  margin-top: 2rem;
+  padding-top: 2rem;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 main span {
   color: #274c5b;
@@ -36085,4 +36087,4 @@ main span {
   }
 }
 
-/*# sourceMappingURL=logado.css.map */
+/*# sourceMappingURL=perfil.css.map */
