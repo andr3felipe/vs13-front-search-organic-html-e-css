@@ -11855,43 +11855,5 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Inter", sans-serif;
-}
 
-body {
-  background-color: #f8f6f4 !important;
-}
-
-main {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-a {
-  text-decoration: none !important;
-}
-
-ul {
-  margin-bottom: 0 !important;
-}
-
-.so-button {
-  font-size: 1rem;
-  color: rgb(40, 93, 86);
-  padding: 0.375rem 0.75rem;
-  font-weight: 600;
-  border-radius: 0.375rem;
-  transition: all 0.2s ease-in-out;
-  border: 2px solid rgb(40, 93, 86);
-}
-.so-button:hover {
-  background-color: rgb(40, 93, 86);
-  color: #fff;
-}
-
-/*# sourceMappingURL=global.css.map */
+/*# sourceMappingURL=custom-theme.css.map */
