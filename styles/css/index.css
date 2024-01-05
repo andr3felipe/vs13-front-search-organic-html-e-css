@@ -130,6 +130,7 @@ ul {
 .ph-list {
   transition: all 0.2s ease-in-out;
   color: #fff !important;
+  font-size: 1.5rem;
 }
 
 .nav-link {
@@ -12515,10 +12516,6 @@ textarea.form-control-lg {
   .so-missao .so-missao-cards .so-missao-card p {
     font-size: 1rem;
   }
-}
-.ph-list {
-  color: #fff;
-  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=index.css.map */

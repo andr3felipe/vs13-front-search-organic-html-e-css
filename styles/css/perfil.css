@@ -130,6 +130,7 @@ ul {
 .ph-list {
   transition: all 0.2s ease-in-out;
   color: #fff !important;
+  font-size: 1.5rem;
 }
 
 .nav-link {
@@ -12172,10 +12173,6 @@ main span {
 }
 .my-favorites .my-favorites-cards p {
   margin: 0 10px;
-}
-
-.ph {
-  margin-left: 0.5rem;
 }
 
 .so-products-card {
