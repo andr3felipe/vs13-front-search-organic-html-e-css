@@ -1,0 +1,87 @@
+@import "./global.scss", "./header.scss", "./footer.scss";
+
+.so-title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.so-login-form {
+  margin: 0 auto;
+  max-width: 500px;
+
+  label {
+    font-weight: 600 !important;
+  }
+
+  .so-forgot-password {
+    display: block;
+    font-size: 0.8rem;
+    text-align: end;
+    margin-top: 0.25rem;
+
+    color: $so-text;
+
+    &:hover {
+      color: $so-green;
+    }
+  }
+}
+
+.form-control {
+  &:focus {
+    border-color: $so-green !important;
+  }
+}
+
+main {
+  margin-top: 4rem;
+
+  h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
+
+hr {
+  margin: 2rem 0 1rem !important;
+}
+
+.so-login-with-social-media {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row wrap;
+  gap: 1rem;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+}
+
+.so-register {
+  margin-top: 1rem;
+  text-align: center;
+
+  a {
+    color: $so-green;
+    font-weight: 600;
+
+    &:hover {
+      text-decoration: underline !important;
+    }
+  }
+
+  h3 {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
