@@ -13,6 +13,8 @@ $so-gray-200: rgba(235, 229, 223, 1);
 $so-gray-700: rgba(132, 114, 98, 1);
 $so-gray-800: rgba(100, 86, 79, 1);
 $so-gray-900: rgba(73, 58, 49, 1);
+$so-valid: #e7f5e6;
+$so-invalid: #fad9d9;
 
 * {
   box-sizing: border-box;
@@ -51,5 +53,16 @@ ul {
   &:hover {
     background-color: $so-green;
     color: $so-white;
+  }
+}
+
+.form-control {
+  &:focus:invalid {
+    background-color: $so-invalid;
+  }
+
+  &:focus:valid,
+  &:valid {
+    background-color: $so-valid;
   }
 }
