@@ -242,7 +242,7 @@ footer {
   transition: all 0.3s ease-in-out;
 }
 .redes-sociais i:hover {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 @media (max-width: 768px) {

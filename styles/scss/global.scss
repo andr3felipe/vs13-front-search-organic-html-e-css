@@ -5,6 +5,7 @@ $so-transition: all 0.2s ease-in-out;
 $so-bg: #f8f6f4;
 $so-secondary: #274c5b;
 $so-accent: #007766;
+$so-promotional-price: rgb(209, 189, 171);
 $so-gray-50: rgba(248, 246, 244, 1);
 $so-gray-100: rgba(242, 238, 234, 1);
 $so-gray-200: rgba(235, 229, 223, 1);
@@ -297,7 +298,7 @@ footer {
     transition: all 0.3s ease-in-out;
 
     &:hover {
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
   }
 }

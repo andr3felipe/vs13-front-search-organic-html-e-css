@@ -243,7 +243,7 @@ footer {
   transition: all 0.3s ease-in-out;
 }
 .redes-sociais i:hover {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 @media (max-width: 768px) {
@@ -12171,6 +12171,14 @@ hr {
   flex-direction: row wrap;
   gap: 1rem;
   font-weight: 600 !important;
+}
+.so-login-with-social-media .btn-primary {
+  background-color: #3b5998;
+  border-color: #3b5998;
+}
+.so-login-with-social-media .btn-primary:hover {
+  background-color: #1a3061;
+  border-color: #1a3061;
 }
 .so-login-with-social-media a {
   display: flex;
