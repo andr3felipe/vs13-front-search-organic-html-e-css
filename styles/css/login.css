@@ -12150,7 +12150,8 @@ textarea.form-control-lg {
 }
 
 main {
-  margin-top: 4rem;
+  margin-top: 3rem;
+  padding: 1rem;
 }
 main h2, main .h2 {
   font-size: 1rem;

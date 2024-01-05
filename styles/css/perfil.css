@@ -12123,7 +12123,7 @@ textarea.form-control-lg {
   }
 }
 main {
-  padding-top: 2rem;
+  padding: 2rem 1rem 1rem;
   max-width: 1440px;
   margin: 0 auto;
 }
