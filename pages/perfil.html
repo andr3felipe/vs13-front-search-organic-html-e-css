@@ -194,6 +194,102 @@
       <section class="my-orders">
         <h2>Meus pedidos</h2>
         <div class="my-orders-container">
+                    <div class="order">
+            <div class="order-details">
+              <h3>Número do Pedido</h3>
+              <p>123456789</p>
+              <span>12/12/2023 12:39:56</span>
+            </div>
+            <div class="order-details">
+              <h3>Forma de pagamento</h3>
+              <p>Cartão de crédito</p>
+            </div>
+            
+            <div class="order-details">
+              <h3>Valor total</h3>
+              <p>R$ 123,45</p>
+          </div>
+          <div class="order-details">
+            <h3>Código de Rastreio</h3>
+            <p>123456789</p>
+          </div>
+                      <div class="order-details">
+              <h3>Status do Pedido</h3>
+              <button  type="button"  class="btn-status" data-bs-toggle="modal" data-bs-target="#rastreioModal">Rastreiar</button>
+              <div class="modal fade" id="rastreioModal" tabindex="-1" aria-labelledby="rastreioModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="rastreioModal">Detalhes do Pedido</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-tracking">
+          <div class="modal-tracking-details">
+                  <p>Enviado para Transportadora
+</p>
+                  <span>12/12/2023 09:15</span>
+                  </div>
+</div>
+                  <p>Previsão de entrega: 20/12/2023</p>
+                  
+
+      </div>
+            <div class="modal-body">
+        <div class="modal-tracking">
+          <div class="modal-tracking-details">
+                  <p>Nota Fiscal Emitida
+</p>
+                  <span>12/12/2023 08:44</span>
+                  </div>
+</div>
+                  <p>Previsão de entrega: 20/12/2023</p>
+                  
+
+      </div>
+            <div class="modal-body">
+        <div class="modal-tracking">
+          <div class="modal-tracking-details">
+                  <p>Pedido em Separação</p>
+                  <span>12/12/2023 05:39</span>
+                  </div>
+</div>
+                  <p>Previsão de entrega: 20/12/2023</p>
+                  
+
+      </div>
+            <div class="modal-body">
+        <div class="modal-tracking">
+          <div class="modal-tracking-details">
+                  <p>Pagamento Confirmado</p>
+                  <span>12/12/2023 05:37</span>
+                  </div>
+</div>
+                  <p>Previsão de entrega: 20/12/2023</p>
+                  
+
+      </div>
+            <div class="modal-body">
+        <div class="modal-tracking">
+          <div class="modal-tracking-details">
+                  <p>Pedido Efetuado</p>
+                  <span>12/12/2023 05:35</span>
+                  </div>
+</div>
+                  <p>Previsão de entrega: 12/12/2023</p>
+                  
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary">Rastreiar na Transportadora</button>
+      </div>
+    </div>
+  </div>
+</div>
+            </div>
+            
+        </div>
           <div class="order">
             <div class="order-details">
               <h3>Número do Pedido</h3>
@@ -215,7 +311,7 @@
           </div>
                       <div class="order-details">
               <h3>Status do Pedido</h3>
-              <span class="btn-status">Entregue</span>
+              <button class="btn-status">Entregue</button>
             </div>
         </div>
           <div class="order">
@@ -238,11 +334,12 @@
           </div>
                       <div class="order-details">
               <h3>Status do Pedido</h3>
-              <span class="btn-status">Entregue</span>
+              <button class="btn-status">Entregue</button>
             </div>
         </div>
 
       </section>
+      
     </main>
 
     <footer>
