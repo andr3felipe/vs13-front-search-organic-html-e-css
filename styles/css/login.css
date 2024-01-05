@@ -175,7 +175,7 @@ footer {
   margin: 0 auto;
   padding: 2rem;
 }
-.links-footer div h3, .links-footer div .h3 {
+.links-footer div p {
   color: #fff;
   font-size: 1.5rem;
   font-weight: 700;
