@@ -19,22 +19,6 @@
   bottom: 2rem !important;
   top: 43%;
 
-  a {
-    color: $so-white;
-    font-size: 1.2rem;
-    font-weight: 400;
-    text-decoration: none;
-    background-color: $so-green;
-    padding: 0.5rem;
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-
-    &:hover {
-      background-color: $so-white;
-      color: $so-green;
-      text-decoration: none;
-    }
-  }
   h3 {
     font-size: 2rem;
     font-weight: 700;
@@ -73,10 +57,6 @@
   flex-flow: row wrap;
   gap: 3rem;
   padding-bottom: 5rem;
-}
-
-.so-button {
-  align-self: center;
 }
 
 .so-products-card {
@@ -196,23 +176,8 @@
   }
 
   a {
-    background-color: transparent;
-    color: $so-white;
-    font-size: 1.2rem;
+    max-width: 7.5rem;
     font-weight: 600;
-    text-decoration: none;
-    border-radius: 4px;
-    width: fit-content;
-    align-self: flex-start;
-    transition: $so-transition;
-    border: 2px solid $so-white;
-    padding: 0.5rem 0.5rem;
-
-    &:hover {
-      color: black;
-      background-color: $so-white;
-      text-decoration: none;
-    }
   }
 
   p {
@@ -232,27 +197,27 @@
 .so-missao {
   display: flex;
   flex-direction: column;
-  background-color: #004d40;
+  background-color: $so-green;
   padding: 4rem;
   max-width: 1440px;
   margin: 3rem auto 0;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 
-  border-radius: 27px;
   span {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 500;
-    color: $so-gray-200;
+    color: $so-gray-100;
     margin-bottom: 1rem;
   }
   h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
-    color: #e6e0d2;
+    color: $so-white;
     margin-bottom: 2rem;
     text-wrap: nowrap;
   }
   p {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 400;
     color: $so-white;
     margin-bottom: 1rem;
@@ -266,13 +231,13 @@
     color: white;
     font-size: 1rem;
     padding: 1rem 2rem;
-    border-radius: 60px;
+    border-radius: 0.375rem;
     width: fit-content;
     font-weight: 600;
   }
   .so-missao-cards {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-between;
     gap: 2rem;
     margin-top: 2rem;
@@ -283,18 +248,18 @@
       align-items: center;
       justify-content: center;
       background-color: white;
-      gap: 1rem;
-      padding: 1rem 2rem;
-      border-radius: 27px;
+      padding: 0 2rem 1rem;
+
       max-width: 300px;
+
       h3 {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         font-weight: 700;
         color: $so-secondary;
         margin-bottom: 1rem;
       }
       p {
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: 400;
         color: $so-text;
         margin-bottom: 1rem;
@@ -313,6 +278,7 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   margin-top: 2rem;
+
   .image-missao {
     display: flex;
     align-items: center;
@@ -321,7 +287,6 @@
       width: 100%;
       max-height: 500px;
       object-fit: cover;
-      border-radius: 17px;
     }
   }
 }
