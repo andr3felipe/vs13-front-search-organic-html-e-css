@@ -1,4 +1,4 @@
-@import "./global.scss", "./header.scss", "./footer.scss";
+@import "./global.scss", "./custom-theme.scss";
 
 .so-title {
   text-align: center;
@@ -55,6 +55,7 @@ hr {
   justify-content: center;
   flex-direction: row wrap;
   gap: 1rem;
+  font-weight: 600 !important;
 
   a {
     display: flex;
