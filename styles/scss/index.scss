@@ -50,7 +50,7 @@
   }
 }
 
-.so-categories {
+.so-vegetable-garden {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,25 +60,78 @@
 }
 
 .so-products-card {
-  width: 18rem;
-  img {
-    height: 200px;
-    object-fit: cover;
-  }
-}
-
-.so-products-card-body {
-  display: flex;
-  align-items: flex-start;
+  display: grid;
+  align-items: center;
   justify-content: center;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   gap: 1rem;
-}
+  padding: 0.5rem;
 
-.so-products-card-title {
-  font-weight: 500;
-  font-size: 1.25rem;
-  margin: 0;
+  max-width: 15.625rem;
+  width: 100%;
+  height: 100%;
+
+  box-shadow: 4px 4px 22px -8px rgba(0, 0, 0, 0.1);
+
+  .so-products-card-price {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+
+    .promotional-price {
+      color: $so-promotional-price;
+      text-decoration: line-through;
+    }
+  }
+
+  .so-products-card-img-top {
+    overflow: hidden;
+    position: relative;
+
+    .so-products-card-discount {
+      position: absolute;
+      top: 0.5rem;
+      left: 0.5rem;
+      background-color: red;
+      padding: 0.25rem 0.5rem;
+      border-radius: 8px;
+      color: $so-white;
+      font-weight: 600;
+      opacity: 0.6;
+      font-size: 0.8rem;
+    }
+
+    .so-products-card-seal {
+      position: absolute;
+      bottom: 0.5rem;
+      left: 0.5rem;
+      max-width: 3.25rem;
+    }
+
+    .so-products-card-favorite {
+      position: absolute;
+      bottom: 0.5rem;
+      right: 0.5rem;
+      padding: 0.5rem;
+      font-weight: 600;
+      border-radius: 16px;
+      background-color: $so-white;
+      font-size: 1.5rem;
+      box-shadow: 4px 4px 22px 9px rgba(0, 0, 0, 0.1);
+
+      cursor: pointer;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .so-products-card-title {
+    font-weight: 500;
+    margin-bottom: 0;
+  }
 }
 
 .so-testimonies {
