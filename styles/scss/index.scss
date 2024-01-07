@@ -59,6 +59,8 @@
   padding-bottom: 5rem;
 }
 
+
+
 .so-products-card {
   display: grid;
   align-items: center;
@@ -106,7 +108,27 @@
       position: absolute;
       bottom: 0.5rem;
       left: 0.5rem;
-      max-width: 3.25rem;
+      max-width: 4.5rem;
+    }
+
+    .so-favorite-container {
+      position: relative;
+
+      .ph-fill {
+        display: none;
+      }
+
+      &:hover {
+        .ph-fill {
+          display: inline-block;
+          color: red;
+
+        }
+
+        .ph {
+          display: none;
+        }
+      }
     }
 
     .so-products-card-favorite {
@@ -119,6 +141,7 @@
       background-color: $so-white;
       font-size: 1.5rem;
       box-shadow: 4px 4px 22px 9px rgba(0, 0, 0, 0.1);
+      transition: $so-transition;
 
       cursor: pointer;
     }
