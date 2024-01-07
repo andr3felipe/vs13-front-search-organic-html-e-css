@@ -21,11 +21,11 @@ Passo-a-passo:
 1. Comandos necessários para executar:
 
 ```
-git clone repositorio
-cd rep
+git clone git@github.com:andr3felipe/vs13-front-search-organic-html-e-css.git
+cd vs13-front-search-organic-html-e-css
 npm install
 code .
-Open With Live Server
+Abra o arquivo index.html
 ```
 
 > Nosso projeto possui dependencias extenas como o Bootstrap, portanto é necessário o comando de npm install
@@ -68,21 +68,17 @@ exemplo.
 
 O menu de navegação entre as futuras páginas, o botão de login e o nome da empresa estão contidos nesta seção.
 
-<img src="./assets/readme-imgs/header.png" />
+<img src="./assets/readme-imgs/header.jpg" />
 
 # Carousel
 
 Esta seção apresenta um carrossel com imagens relacionadas ao propósito da nossa aplicação,
 
-# Categorias
+# Nossa horta
 
-Nesta parte, oferecemos um conjunto de cards que permite aos usuários buscar alimentos por categorias, facilitando a navegação e a localização dos produtos desejados.
+Nesta parte, oferecemos um conjunto de cards de alguns de nossos produtos.
 
-<img src="./assets/readme-imgs/categorias.jpg">
-
-# Recomendações
-
-Apresentamos uma lista de cards com recomendações dos principais produtos ou lojas do momento em nosso sistema, proporcionando aos usuários insights valiosos sobre as escolhas populares.
+<img src="./assets/readme-imgs/nossa_horta.jpg">
 
 # Propaganda
 
