@@ -130,6 +130,7 @@ ul {
 .ph-list {
   transition: all 0.2s ease-in-out;
   color: #fff !important;
+  font-size: 1.5rem;
 }
 
 .nav-link {
@@ -12140,7 +12141,8 @@ textarea.form-control-lg {
 }
 
 main {
-  margin-top: 4rem;
+  margin-top: 3rem;
+  padding: 1rem;
 }
 main h2, main .h2 {
   font-size: 1rem;

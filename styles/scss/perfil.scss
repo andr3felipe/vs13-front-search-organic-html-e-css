@@ -1,7 +1,7 @@
 @import "./global.scss", "./custom-theme.scss";
 
 main {
-  padding-top: 2rem;
+  padding: 2rem 1rem 1rem;
   max-width: 1440px;
   margin: 0 auto;
 
@@ -54,10 +54,6 @@ main {
       margin: 0 10px;
     }
   }
-}
-
-.ph {
-  margin-left: 0.5rem;
 }
 
 .so-products-card {
